@@ -49,7 +49,7 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     const donate2Value = parseFloat(getInputFieldValueById('donate-value-2').value)
 
     const donate2DefaultValue = parseFloat(getTextFieldValueById('donate-2-default-value').innerText);
-  
+
     const amountTotal = donate2DefaultValue + donate2Value;
     const donate2Element = document.getElementById('donate-2-default-value')
     donate2Element.innerText = amountTotal;
@@ -59,5 +59,22 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
 
     const myBalanceElement = document.getElementById('my-balance');
     myBalanceElement.innerText = latestBalance;
-    
+
+})
+
+// donate now 3
+document.getElementById('donate-now-3').addEventListener('click', function () {
+    const donate3Value = parseFloat(getInputFieldValueById('donate-value-3').value);
+
+    const donate3DefaultValue = parseFloat(getTextFieldValueById('donate-3-default-value').innerText);
+
+    const amountTotal = donate3DefaultValue + donate3Value;
+    const donate3Element = document.getElementById('donate-3-default-value');
+    donate3Element.innerText = amountTotal;
+
+    const myBalance = parseFloat(getTextFieldValueById('my-balance').innerText);
+    const latestBalance = myBalance - donate3Value;
+
+    const myBalanceElement = document.getElementById('my-balance');
+    myBalanceElement.innerText = latestBalance;
 })
