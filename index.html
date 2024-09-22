@@ -28,11 +28,11 @@
             </div>
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="">
-                <h4 class="font-semibold text-xl">Donate Bangladesh</h4>
+                <h4 class="font-semibold text-xl hidden md:inline">Donate Bangladesh</h4>
             </div>
             <div class="flex items-center gap-2">
                 <img src="assets/coin.png" alt="">
-                <h4 class="font-medium text-xl">550 BDT</h4>
+                <h4 class="font-medium text-xl">5500 BDT</h4>
             </div>
         </nav>
         <!-- navbar end  -->
@@ -43,12 +43,12 @@
             <!-- toggle start -->
             <div class="flex justify-center mb-8">
                 <div class="flex gap-4 items-center">
-                    <button class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
-                    <button class="border-2  py-3 px-8 rounded-lg font-medium text-xl">History</button>
+                    <button id="btn-donation" class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
+                    <button id="btn-history" class="border-2  py-3 px-8 rounded-lg font-medium text-xl">History</button>
                 </div>
             </div>
             <!-- toggle end -->
-            <section class="grid grid-cols-1 gap-8">
+            <section id="donation-container" class="grid grid-cols-1 gap-8">
                 <div class="md:flex border p-6 rounded-2xl items-center gap-8 space-y-4 md:space-y-0">
                     <div class="md:w-1/2">
                         <img class="w-full h-full" src="assets/noakhali.png" alt="">
@@ -131,9 +131,11 @@
         </section>
         <!-- donation end -->
     </main>
-    <footer>
+    <footer class="bg-[#F9F7F3] py-14">
 
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/utility.js"></script>
 </body>
 
 </html>
