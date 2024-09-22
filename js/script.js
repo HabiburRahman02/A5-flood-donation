@@ -40,7 +40,6 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
         return alert('Please provide a positive value')
     }
 
-
     const donate1DefaultValue = parseFloat(getTextFieldValueById('donate-1-default-value').innerText);
 
     const amountTotal = donate1DefaultValue + donate1Value;
