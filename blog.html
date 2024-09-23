@@ -10,8 +10,25 @@
 </head>
 
 <body>
-    <main class="max-w-6xl mx-auto mt-12">
-        <div class="collapse collapse-arrow bg-[#F9F7F3] rounded-none mb-3">
+    <header class="bg-[#F9F7F3]">
+        <!-- navbar start  -->
+        <nav class="max-w-6xl mx-auto flex justify-between py-6">
+            <div>
+                <a href="index.html"> <button class="btn bg-[#B4F461] px-6 font-medium text-xl">Home</button></a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h4 class="font-semibold text-xl hidden md:inline">Donate Bangladesh</h4>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/coin.png" alt="">
+                <h4 class="font-medium text-xl"><span id="my-balance">5500</span> BDT</h4>
+            </div>
+        </nav>
+        <!-- navbar end  -->
+    </header>
+    <main class="max-w-6xl mx-auto mt-12 ">
+        <div class="collapse collapse-arrow shadow-2xl bg-white rounded-none mb-3 ">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
@@ -20,7 +37,7 @@
                     structure, and styles of a webpage without requiring a page reload.</p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-[#F9F7F3] rounded-none mb-3">
+        <div class="collapse collapse-arrow shadow-2xl bg-white rounded-none mb-3">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
@@ -28,7 +45,7 @@
                     getElementsByTagName, querySelector, querySelectorAll</p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-[#F9F7F3] rounded-none mb-3">
+        <div class="collapse collapse-arrow shadow-2xl bg-white rounded-none mb-3">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
                 is it useful?</div>
@@ -38,12 +55,13 @@
                     listeners to each child, the parent listens for events, and through event propagation (bubbling)</p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-[#F9F7F3] rounded-none mb-3">
+        <div class="collapse collapse-arrow shadow-2xl bg-white rounded-none mb-3">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
                 using the DOM?</div>
             <div class="collapse-content">
-                <p>We manipulate an HTML element's attributes and styles in multiple ways, such as using getAttribute, setAttribute, changing innerText, adding classes with classList, and more.</p>
+                <p>We manipulate an HTML element's attributes and styles in multiple ways, such as using getAttribute,
+                    setAttribute, changing innerText, adding classes with classList, and more.</p>
             </div>
         </div>
     </main>
