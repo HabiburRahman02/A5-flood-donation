@@ -11,6 +11,9 @@ document.getElementById('btn-history').addEventListener('click', function () {
     btnDonation.classList.remove('bg-[#B4F461]', 'py-3', 'px-8', 'rounded-lg', 'font-medium', 'text-xl')
     btnDonation.classList.add('border-2', 'py-3', 'px-8', 'rounded-lg', 'font-medium', 'text-xl')
 
+    const historySection = document.getElementById('history-section');
+    historySection.classList.remove('hidden')
+
 })
 
 // donation button
@@ -25,6 +28,9 @@ document.getElementById('btn-donation').addEventListener('click', function () {
     const btnHistory = getInputFieldValueById('btn-history');
     btnHistory.classList.remove('bg-[#B4F461]', 'py-3', 'px-8', 'rounded-lg', 'font-medium', 'text-xl');
     btnHistory.classList.add('border-2', 'py-3', 'px-8', 'rounded-lg', 'font-medium', 'text-xl')
+
+    const historySection = document.getElementById('history-section');
+    historySection.classList.add('hidden')
 })
 
 // donate now 1
@@ -58,6 +64,22 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
     const myBalanceElement = document.getElementById('my-balance');
     myBalanceElement.innerText = latestBalance;
 
+    if (donate1Value) {
+        alert('successfully donate')
+    }
+
+    // update history
+    const donation1Title = getTextFieldValueById('donation-1-title').innerText;
+    console.log(donation1Title)
+    const historyContainer = document.getElementById('history-container');
+    const div = document.createElement('div');
+    div.innerHTML = `  
+   <div class="space-y-4 border-2 rounded-2xl p-8">
+        <p class="font-bold text-xl">${donate1Value} Taka ${donation1Title}</p>
+        <p>Date : ${new Date().toLocaleString()}</p>
+    </div>
+   `
+    historyContainer.appendChild(div)
 })
 
 // donate now 2
@@ -90,6 +112,9 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     const myBalanceElement = document.getElementById('my-balance');
     myBalanceElement.innerText = latestBalance;
 
+    if (donate2Value) {
+        alert('successfully donate')
+    }
 })
 
 // donate now 3
@@ -121,4 +146,8 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
     donate3Element.innerText = amountTotal;
     const myBalanceElement = document.getElementById('my-balance');
     myBalanceElement.innerText = latestBalance;
+
+    if (donate3Value) {
+        alert('successfully donate')
+    }
 })

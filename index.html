@@ -24,7 +24,7 @@
         <!-- navbar start  -->
         <nav class="max-w-6xl mx-auto flex justify-between py-6">
             <div>
-               <a href="blog.html"> <button class="btn bg-[#B4F461] px-6 font-medium text-xl">Blog</button></a>
+                <a href="blog.html"> <button class="btn bg-[#B4F461] px-6 font-medium text-xl">Blog</button></a>
             </div>
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="">
@@ -43,7 +43,8 @@
             <!-- toggle start -->
             <div class="flex justify-center mb-8">
                 <div class="flex gap-4 items-center">
-                    <button id="btn-donation" class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
+                    <button id="btn-donation"
+                        class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
                     <button id="btn-history" class="border-2  py-3 px-8 rounded-lg font-medium text-xl">History</button>
                 </div>
             </div>
@@ -59,7 +60,7 @@
                                 <img src="assets/coin.png" alt="">
                                 <p class="font-medium"><span id="donate-1-default-value">0</span> BDT</p>
                             </div>
-                            <p class="font-bold text-xl ">Donate for Flood at Feni, Bangladesh</p>
+                            <p id="donation-1-title" class="font-bold text-xl ">Donate for Flood at Feni, Bangladesh</p>
                             <p class="mb-4"> The recent floods in Feni have caused significant damage to homes
                                 infrastructure. Your donation will help provide essential supplies and to those affected
                                 by
@@ -69,7 +70,8 @@
                             </p>
                             <input id="donate-value-1" type="number" placeholder="Enter Donate Amount"
                                 class="input input-bordered w-full" />
-                            <button id="donate-now-1" class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
+                            <button id="donate-now-1"
+                                class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
                                 Now</button>
 
                         </div>
@@ -94,7 +96,8 @@
                             </p>
                             <input id="donate-value-2" type="number" placeholder="Enter Donate Amount"
                                 class="input input-bordered w-full" />
-                            <button id="donate-now-2" class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
+                            <button id="donate-now-2"
+                                class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
                                 Now</button>
 
                         </div>
@@ -121,13 +124,21 @@
                             </p>
                             <input id="donate-value-3" type="number" placeholder="Enter Donate Amount"
                                 class="input input-bordered w-full" />
-                            <button id="donate-now-3" class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
+                            <button id="donate-now-3"
+                                class="bg-[#B4F461] py-2 rounded-lg font-semibold text-xl w-full">Donate
                                 Now</button>
 
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- history section start -->
+            <div id="history-section" class="hidden">
+                <section id="history-container" class=" grid grid-cols-1 gap-6">
+
+                </section>
+            </div>
+            <!-- history section end -->
         </section>
         <!-- donation end -->
     </main>
