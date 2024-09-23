@@ -65,7 +65,8 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
     myBalanceElement.innerText = latestBalance;
 
     if (donate1Value) {
-        alert('successfully donate')
+        const donateSuccessModal = document.getElementById('my_modal_1');
+        donateSuccessModal.showModal()
     }
 
     // update history
@@ -112,7 +113,8 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     myBalanceElement.innerText = latestBalance;
 
     if (donate2Value) {
-        alert('successfully donate')
+        const donateSuccessModal = document.getElementById('my_modal_1');
+        donateSuccessModal.showModal()
     }
 
     // update history
@@ -159,7 +161,8 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
     myBalanceElement.innerText = latestBalance;
 
     if (donate3Value) {
-        alert('successfully donate')
+        const donateSuccessModal = document.getElementById('my_modal_1');
+        donateSuccessModal.showModal()
     }
 
     // update history
