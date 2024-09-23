@@ -20,35 +20,37 @@
 </head>
 
 <body class="text-[#111111B3]">
-    <header class="bg-[#F9F7F3]">
-        <!-- navbar start  -->
-        <nav class="max-w-6xl mx-auto flex justify-between py-6">
-            <div>
-                <a href="blog.html"> <button class="btn bg-[#B4F461] px-6 font-medium text-xl">Blog</button></a>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="assets/logo.png" alt="">
-                <h4 class="font-semibold text-xl hidden md:inline">Donate Bangladesh</h4>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="assets/coin.png" alt="">
-                <h4 class="font-medium text-xl"><span id="my-balance">5500</span> BDT</h4>
-            </div>
-        </nav>
-        <!-- navbar end  -->
-    </header>
-    <main class="max-w-6xl mx-auto ">
-        <!-- donation start -->
-        <section class="my-20">
-            <!-- toggle start -->
-            <div class="flex justify-center mb-8">
-                <div class="flex gap-4 items-center">
-                    <button id="btn-donation"
-                        class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
-                    <button id="btn-history" class="border-2  py-3 px-8 rounded-lg font-medium text-xl">History</button>
+    <div class="fixed w-full top-0">
+        <header class="bg-[#F9F7F3]">
+            <!-- navbar start  -->
+            <nav class="max-w-6xl mx-auto flex justify-between py-6">
+                <div>
+                    <a href="blog.html"> <button class="btn bg-[#B4F461] px-6 font-medium text-xl">Blog</button></a>
                 </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.png" alt="">
+                    <h4 class="font-semibold text-xl hidden md:inline">Donate Bangladesh</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <h4 class="font-medium text-xl"><span id="my-balance">5500</span> BDT</h4>
+                </div>
+            </nav>
+            <!-- navbar end  -->
+        </header>
+        <!-- toggle start -->
+        <div class="flex justify-center mb-8 mt-20">
+            <div class="flex gap-4 items-center">
+                <button id="btn-donation"
+                    class="bg-[#B4F461] py-3 px-8 rounded-lg font-medium text-xl">Donation</button>
+                <button id="btn-history" class="border-2  py-3 px-8 rounded-lg font-medium text-xl">History</button>
             </div>
-            <!-- toggle end -->
+        </div>
+        <!-- toggle end -->
+    </div>
+    <main class="max-w-6xl mx-auto mt-64">
+        <!-- donation start -->
+        <section class="mb-20">
             <section id="donation-container" class="grid grid-cols-1 gap-8">
                 <div class="md:flex border p-6 rounded-2xl items-center gap-8 space-y-4 md:space-y-0">
                     <div class="md:w-1/2">
@@ -87,7 +89,8 @@
                                 <img src="assets/coin.png" alt="">
                                 <span class="font-medium"> <span id="donate-2-default-value">600</span> BDT</span>
                             </div>
-                            <p class="font-bold text-xl ">Donate for Flood Relief in Cox's ,Bangladesh</p>
+                            <p id="donation-2-title" class="font-bold text-xl ">Donate for Flood Relief in Cox's
+                                ,Bangladesh</p>
                             <p class="mb-4"> The recent floods in Cox's have devastated local communities, leading to
                                 severe disruption and loss. Your generous donation will help provide immediate aid,
                                 including food, clean water, and medical supplies, to those affected by this calamity.
@@ -113,7 +116,8 @@
                                 <img src="assets/coin.png" alt="">
                                 <span class="font-medium"><span id="donate-3-default-value">900 </span>BDT</span>
                             </div>
-                            <p class="font-bold text-xl ">Aid for Injured in the Quota Movement</p>
+                            <p id="donation-3-title" class="font-bold text-xl ">Aid for Injured in the Quota Movement
+                            </p>
                             <p class="mb-4"> The recent Quota movement has resulted in numerous injuries and significant
                                 hardship for many individuals. Your support is crucial in providing medical assistance,
                                 rehabilitation, and necessary supplies to those affected. By contributing, you help

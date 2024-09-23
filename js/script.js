@@ -70,7 +70,6 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
 
     // update history
     const donation1Title = getTextFieldValueById('donation-1-title').innerText;
-    console.log(donation1Title)
     const historyContainer = document.getElementById('history-container');
     const div = document.createElement('div');
     div.innerHTML = `  
@@ -115,6 +114,18 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     if (donate2Value) {
         alert('successfully donate')
     }
+
+    // update history
+    const donation2Title = getTextFieldValueById('donation-2-title').innerText;
+    const historyContainer = document.getElementById('history-container');
+    const div = document.createElement('div');
+    div.innerHTML = `  
+     <div class="space-y-4 border-2 rounded-2xl p-8">
+          <p class="font-bold text-xl">${donate2Value} Taka ${donation2Title}</p>
+          <p>Date : ${new Date().toLocaleString()}</p>
+      </div>
+     `
+    historyContainer.appendChild(div)
 })
 
 // donate now 3
@@ -150,4 +161,16 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
     if (donate3Value) {
         alert('successfully donate')
     }
+
+    // update history
+    const donation3Title = getTextFieldValueById('donation-3-title').innerText;
+    const historyContainer = document.getElementById('history-container');
+    const div = document.createElement('div');
+    div.innerHTML = `  
+   <div class="space-y-4 border-2 rounded-2xl p-8">
+        <p class="font-bold text-xl">${donate3Value} Taka ${donation3Title}</p>
+        <p>Date : ${new Date().toLocaleString()}</p>
+    </div>
+   `
+    historyContainer.appendChild(div)
 })
